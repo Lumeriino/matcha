@@ -1,0 +1,175 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #7f936f;
+    color: #ffffff;
+    overflow-x: hidden; /* Evita el scroll horizontal no deseado */
+}
+
+/* TITULOS GENERALES */
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+
+/* SECCION ABOUT US */
+.about-section h1 {
+    font-size: 2.5rem;
+    color: #f8f8f8;
+    margin-bottom: 1.5rem;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #f8f8f8;
+}
+
+.about-section img {
+    max-width: 100%; /* Responsivo */
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* FAQs */
+.faq-list {
+    max-width: 800px;
+    margin: 2em auto;
+    border-top: 1px solid #ccc;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ccc;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+    background-color: #6b8460;
+}
+
+.faq-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+    color: #ffffff;
+}
+
+.faq-toggle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #aaaaaa;
+    transition: color 0.3s ease;
+}
+
+.faq-toggle:hover {
+    color: #ffffff;
+}
+
+.faq-response {
+    display: none;
+    padding-top: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+/* EQUIPO */
+
+#team .team-member {
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+#team .team-member img {
+    width: 150px; /* Tamaño adecuado para las fotos */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; /* Hace las imágenes redondas */
+    transition: transform 0.3s ease;
+}
+
+#team .team-member h4 {
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+#team .team-member .role {
+    font-size: 1rem;
+    color: #666;
+}
+
+#team .team-member p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+#team .team-member:hover img {
+    transform: scale(1.1); /* Efecto de ampliación al pasar el ratón */
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+    .about-section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-section p {
+        font-size: 1rem;
+    }
+
+    .faq-question {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    #team .col-md-2 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    #team .col-md-2 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
