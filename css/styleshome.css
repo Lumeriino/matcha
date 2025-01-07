@@ -1,0 +1,112 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0  !important;;
+    text-decoration: none !important;
+    color: #616e56  !important;;
+}
+
+h1 {
+    font-family: "Gayathri", serif  !important;;
+    font-weight: 100  !important;;
+    font-style: normal  !important;;
+    font-size: 6em  !important;;
+}
+
+h3 {
+    font-family: "Gayathri", serif  !important;;
+    font-weight: 100  !important;;
+    font-style: normal  !important;;
+    font-size: 2.5em  !important;;
+}
+
+h2 {
+    font-family: "Gayathri", serif  !important;;
+    font-weight: 100  !important;;
+    font-style: normal  !important;;
+    font-size: 1.25em  !important;;
+}
+
+p {
+    font-family: "Montserrat", sans-serif  !important;;
+    font-weight: 200  !important;;
+}
+
+ul {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+a h2:hover, a h3:hover {
+    color: #ffabde !important;
+}
+
+#cerrar:hover {
+    background-color: #ffabde !important;
+    transition: transform 0.3s linear;
+
+}
+
+/* HOME PAGE */
+header {
+    height: 100vh;
+    background-image: url("../media/img/img1.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    z-index: -1;
+    transition: background-image 0.25s ease-in-out;
+
+}
+
+#title {
+    height: 76vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* HOME PAGE > MENU */
+#menu {
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    position: fixed;
+    z-index: 5;
+}
+
+#menu > a {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5em;
+}
+
+#menu_b {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#menu_b ul {
+    width: 85%;
+    height: 50%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #616e56;
+    border-radius: 50px;
+}
+
+#menu_b ul li {
+    padding-top: 0.5em;
+}
+
+#menu_b ul li a {
+    color: #616e56;
+}
