@@ -161,7 +161,7 @@ nav a {
 
 #team .team-member p {
     font-size: 0.9rem;
-    color: #555;
+    color: #ffabde !important;
 }
 
 #team .team-member:hover img {
