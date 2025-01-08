@@ -4,10 +4,12 @@
     text-decoration: none !important;
     font-family: "Gayathri", serif  !important;;
 }
+
 body {
     color: #616e56  !important;;
     margin: 0  !important;;
 }
+
 .aboutus {
     color: white !important;;
     background-color: #7f936f;
@@ -43,6 +45,13 @@ ul {
     padding: 0 !important;
     margin: 0 !important;
 }
+
+nav a {
+    color: #616e56;
+}
+
+/* PAG ABOUT US */
+
 
 /* SECCION ABOUT US */
 .about-section {
@@ -166,7 +175,6 @@ ul {
 }
 
 /* PAG HOME PAGE */
-
 a h2:hover, a h3:hover {
     color: #ffabde !important;
 }
@@ -199,7 +207,7 @@ header {
 #menu {
     display: flex;
     width: 100%;
-    height: 15vh;
+    height: 15vh !important;
     position: fixed;
     z-index: 5;
 }
@@ -213,17 +221,17 @@ header {
 }
 
 #menu_b {
-    width: 75%;
-    display: flex;
+    width: 75% !important;
+    display: flex !important;
     justify-content: center;
     align-items: center;
 }
 
 #menu_b ul {
     width: 85%;
-    height: 50%;
-    padding: 0;
-    margin: 0;
+    height: 50% !important;
+    padding: 0 !important;
+    margin: 0 !important;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -235,9 +243,18 @@ header {
     padding-top: 0.5em;
 }
 
+.aboutus #menu_b ul li h2 {
+    margin-top: 0.5em !important;
+}
+
+.aboutus #menu > a {
+    padding-top: 1.5em;
+}
+
 #menu_b ul li a {
     color: #616e56;
 }
+
 /* Botón hamburguesa */
 #menu-toggle {
     display: none;
