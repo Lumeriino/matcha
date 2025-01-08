@@ -32,6 +32,38 @@ document.addEventListener("DOMContentLoaded", function () {
         links[i].addEventListener("click", goBlack);
     }
 });
+// menu hamburguesa
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu_b");
+
+    // Asegurarnos de que el menú vuelva al diseño original en pantallas grandes
+    function handleResize() {
+        if (window.innerWidth > 768) {
+            menu.style.display = "flex"; // Diseño original
+            menu.classList.remove("active"); // Quitar clase activa
+        } else {
+            menu.style.display = "none"; // Ocultar menú hamburguesa
+        }
+    }
+
+    // Alternar visibilidad del menú en pantallas pequeñas
+    menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+        if (menu.classList.contains("active")) {
+            menu.style.display = "flex";
+        } else {
+            menu.style.display = "none";
+        }
+    });
+
+    // Detectar cambios de tamaño de pantalla
+    window.addEventListener("resize", handleResize);
+
+    // Ejecutar al cargar la página
+    handleResize();
+});
 
 
 
