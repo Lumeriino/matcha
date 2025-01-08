@@ -131,6 +131,297 @@ h2 {
     transform: scale(1.1); /* Efecto de ampliación al pasar el ratón */
 }
 
+/* PAG HOME PAGE */
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0  !important;;
+    text-decoration: none !important;
+    color: #616e56  !important;;
+}
+
+h1 {
+    font-family: "Gayathri", serif  !important;;
+    font-weight: 100  !important;;
+    font-style: normal  !important;;
+    font-size: 6em  !important;;
+}
+
+h3 {
+    font-family: "Gayathri", serif  !important;;
+    font-weight: 100  !important;;
+    font-style: normal  !important;;
+    font-size: 2.5em  !important;;
+}
+
+h2 {
+    font-family: "Gayathri", serif  !important;;
+    font-weight: 100  !important;;
+    font-style: normal  !important;;
+    font-size: 1.25em  !important;;
+}
+
+p {
+    font-family: "Montserrat", sans-serif  !important;;
+    font-weight: 200  !important;;
+}
+
+ul {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+a h2:hover, a h3:hover {
+    color: #ffabde !important;
+}
+
+#cerrar:hover {
+    background-color: #ffabde !important;
+    transition: transform 0.3s linear;
+
+}
+/* HOME PAGE */
+header {
+    height: 100vh;
+    background-image: url("../media/img/img1.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    z-index: -1;
+    transition: background-image 0.25s ease-in-out;
+
+}
+
+#title {
+    height: 76vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* HOME PAGE > MENU */
+#menu {
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    position: fixed;
+    z-index: 5;
+}
+
+#menu > a {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5em;
+}
+
+#menu_b {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#menu_b ul {
+    width: 85%;
+    height: 50%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #616e56;
+    border-radius: 50px;
+}
+
+#menu_b ul li {
+    padding-top: 0.5em;
+}
+
+#menu_b ul li a {
+    color: #616e56;
+}
+
+/* SECTION 1 */
+#section1 {
+    height: 100vh;
+    background-image: url("../media/img/img2.jpeg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    z-index: -1;
+    
+}
+
+#section1 > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#section1 > div > div {
+    width: 30%;
+    padding-right: 5em;
+    text-align: center;
+}
+
+#section1 p {
+    color: white !important;
+}
+
+/* MATCHA */
+#matcha {
+    height: 100vh;
+}
+
+#green {
+    width: 100%;
+    padding-top: 4em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#green h1 {
+    text-align: center;
+}
+
+#green h1:last-child {
+    color: #7f936f !important;
+}
+
+/* MATCHA > IMG */
+#img_m {
+    position: absolute;
+    display: flex;
+    width: 100%;
+}
+
+.img_m {
+    width: 50%;
+}
+
+#matcha img {
+    aspect-ratio: 1/1;
+    width: 200px;
+}
+
+#img_m1 {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2em 5em;
+}
+
+#img_m2 {
+    padding-left: 3em;
+}
+
+#img_m2 img, #img_m4 img {
+    width: 230px;
+}
+
+#img_m3 {
+    display: flex;
+    justify-content: center;
+}
+
+#img_m4 {
+    display: flex;
+    justify-content: center;
+    padding-top: 5em;
+}
+
+#img_m5 {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3em;
+}
+
+#img_m5 img, #img_m3 img {
+    width: 180px;
+}
+
+#img_m6 {
+    padding-left: 10em;
+}
+
+/* MATCHA > IMG > ROTATE */
+#img_m1 img, #img_m3 img, #img_m5 img {
+    transform: rotate(calc(var(--scroll) * 360deg));
+    transition: transform 0.1s linear;
+}
+
+#img_m2 img, #img_m6 img {
+    transform: rotate(calc(var(--scroll) * 180deg));
+    transition: transform 0.5s linear;
+}
+
+#img_m4 img {
+    transform: rotate(calc(var(--scroll) * 180deg));
+    transition: transform 0.3s linear;
+}
+
+/* MATCHA > IMG > HOVER */
+#matcha img:hover {
+    transform: rotate(-90deg) scale(1.15);
+    transition: transform 0.5s linear, scale 0.5s linear;
+}
+
+.img_m_izq {
+    position: relative;
+    display: inline-block;
+}
+
+.img_m_izq::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.7em;
+    line-height: 0.9em;
+    font-family: Gayathri;
+    color: white;
+    background-color: #ffabde;
+    padding: 0.2em;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    padding: 0.4em 0.4em 0; 
+    border-radius: 50px;
+    text-align: center;
+}
+
+#img_m1::after {
+    content: "Ice Matcha";
+}
+
+#img_m2::after {
+    content: "Matcha & Strawberry";
+}
+
+#img_m3::after {
+    content: "Original Matcha";
+}
+
+#img_m4::after {
+    content: "Coconut Matcha";
+}
+
+#img_m5::after {
+    content: "Cream Matcha";
+}
+
+#img_m6::after {
+    content: "Smooth Matcha";
+}
+
+.img_m_izq:hover::after {
+    opacity: 1;
+}
+
 /* MEDIA QUERIES */
 @media (min-width: 768px) {
     .about-section {
