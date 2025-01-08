@@ -449,6 +449,128 @@ header {
 }
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 1050px) {
+    #menu a h3 {
+        font-size: 2em !important;
+    }
+
+    h1 {
+        font-size: 4em !important;
+    }
+
+    p {
+        font-size: 0.75em !important;
+    }
+
+    #matcha {
+        height: 70vh;
+    }
+
+    #matcha img {
+        aspect-ratio: 1/1;
+        width: 130px;
+    }
+
+    #img_m2 img, #img_m4 img {
+        width: 150px;
+    }
+
+    #img_m5 img, #img_m3 img {
+        width: 100px;
+    }
+
+    #img_m1 {
+        padding-right: 6em !important;
+    }
+    
+    #img_m6 {
+        padding-left: 8em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    h2 {
+        font-size: 1em !important;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    /* menu hamburguersa */
+    h1 {
+        font-size: 3em !important;
+    }
+
+    #section1 > div {
+        justify-content: center;
+    }
+
+    #section1 > div > div {
+        width: 50%;
+        padding-right: 0em;
+    }
+
+    #section1 p {
+        font-weight: 600 !important;
+    }
+
+    #matcha {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
+    #img_m {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img_m {
+        width: 100%;
+    }
+
+    #img_m {
+        position: relative;
+    }
+
+    #img_m1 {
+        padding: 0 2em !important;
+    }
+
+    #img_m2 {
+        padding-left: 6em;
+    }
+
+    #img_m3 {
+        padding: 0em;
+        padding-left: 10em;
+    }
+
+    #img_m4 {
+        padding-top: 0;
+    }
+
+    #img_m5 {
+        padding-right: 5em;
+        padding-top: 1em;
+    }
+
+    #img_m6 {
+        padding-left: 5em;
+    }
+
+    #matcha img {
+        aspect-ratio: 1/1;
+        width: 180px;
+    }
+    
+    #img_m2 img, #img_m4 img {
+        width: 200px;
+    }
+
+    #img_m5 img, #img_m3 img {
+        width: 150px;
+    }
+}
 
 @media (max-width: 480px) {
     h1 {
@@ -459,6 +581,45 @@ header {
         font-size: 1.5rem;
     }
 
+    #matcha img {
+        aspect-ratio: 1/1;
+        width: 130px;
+    }
+
+        #img_m1 {
+        padding: 0 2em !important;
+    }
+
+    #img_m2 {
+        padding-left: 3em;
+    }
+
+    #img_m3 {
+        padding: 1em;
+        padding-left: 10em;
+    }
+
+    #img_m4 {
+        padding-top: 0;
+    }
+
+    #img_m5 {
+        padding-right: 2em;
+        padding-top: 1em;
+    }
+
+    #img_m6 {
+        padding-left: 3em;
+    }
+
+    #img_m2 img, #img_m4 img {
+        width: 150px;
+    }
+
+    #img_m5 img, #img_m3 img {
+        width: 100px;
+    }
+
     .about-section p {
         font-size: 1rem;
     }
@@ -467,6 +628,7 @@ header {
         font-size: 1rem;
     }
 }
+
 @media (max-width: 500px) {
     #team .col-md-2 {
         flex: 0 0 100%; 
