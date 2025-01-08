@@ -1,9 +1,16 @@
 * {
     text-decoration: none;
     list-style: none;
-    margin: 0  !important;;
     text-decoration: none !important;
+    font-family: "Gayathri", serif  !important;;
+}
+body {
     color: #616e56  !important;;
+    margin: 0  !important;;
+}
+.aboutus {
+    color: white !important;;
+    background-color: #7f936f;
 }
 
 h1 {
@@ -38,6 +45,9 @@ ul {
 }
 
 /* SECCION ABOUT US */
+.about-section {
+    padding-top: 7em !important;
+}
 .about-section h1 {
     font-size: 2.5rem;
     color: #f8f8f8;
