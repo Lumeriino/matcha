@@ -32,23 +32,23 @@ document.addEventListener("DOMContentLoaded", function () {
         links[i].addEventListener("click", goBlack);
     }
 });
-// menu hamburguesa
 
+// menu hamburguesa
 document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.getElementById("menu-toggle");
     const menu = document.getElementById("menu_b");
 
-    // Asegurarnos de que el menú vuelva al diseño original en pantallas grandes
+    // Asegurar estado del menú al cargar la página
     function handleResize() {
         if (window.innerWidth > 768) {
-            menu.style.display = "flex"; // Diseño original
-            menu.classList.remove("active"); // Quitar clase activa
+            menu.style.display = "flex"; // Mostrar menú en pantallas grandes
+            menu.classList.remove("active"); // Eliminar clase activa
         } else {
-            menu.style.display = "none"; // Ocultar menú hamburguesa
+            menu.style.display = "none"; // Ocultar menú en pantallas pequeñas
         }
     }
 
-    // Alternar visibilidad del menú en pantallas pequeñas
+    // Alternar visibilidad del menú
     menuToggle.addEventListener("click", () => {
         menu.classList.toggle("active");
         if (menu.classList.contains("active")) {
@@ -58,12 +58,13 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Detectar cambios de tamaño de pantalla
+    // Detectar cambios en el tamaño de la pantalla
     window.addEventListener("resize", handleResize);
 
     // Ejecutar al cargar la página
     handleResize();
 });
+
 
 
 
