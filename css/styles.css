@@ -833,29 +833,33 @@ header {
 
 /* FOOTER */
 footer {
-    height: 30vh  !important;;
-    margin: 2em  !important;;
-    border: 2px solid #616e56;
-    border-radius: 50px;
-    padding: 2.5em  !important;;
+    height: 100% !important;
+    margin: 2em !important;
+    border: 2px solid #616e56 !important;
+    border-radius: 50px !important;
+    padding: 2.5em !important;
+}
+
+footer a, footer h2 {
+    color: #616e56 !important;
+
 }
 
 #footer_down {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+    display: flex !important;
+    justify-content: space-between !important;
+    width: 100% !important;
 }
 
 #footer_down div {
-    width: 33%;
+    width: 33%  !important;
 }
 
 /* FOOTER > SUBSCRIBE */
 .subscribe_email input {
-    border-radius: 50px;
-    height: 2em;
-    font-family: "Montserrat", sans-serif;
-
+    border-radius: 50px !important;
+    height: 2em !important;
+    font-family: "Montserrat", sans-serif !important;
 }
 
 #user {
