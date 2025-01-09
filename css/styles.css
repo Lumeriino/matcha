@@ -243,16 +243,21 @@ header {
     padding-top: 0.5em;
 }
 
-.aboutus #menu_b ul li h2 {
+#menu_b ul li h2 {
     margin-top: 0.5em !important;
+    margin-bottom: 0.5rem !important;
 }
 
-.aboutus #menu > a {
+ #menu > a {
     padding-top: 1.5em;
 }
 
 #menu_b ul li a {
     color: #616e56;
+}
+
+.bodygal {
+
 }
 
 /* Botón hamburguesa */
