@@ -853,7 +853,7 @@ footer a, footer h2 {
     }
 
     #footer_down div {
-        width: 100%;
+        width: 100% !important;
     }
 
     #footer1, #footer2 {
