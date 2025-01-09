@@ -3,8 +3,11 @@ const scroll = new LocomotiveScroll({
     smooth: true,
 });
 
-// inicio
+// Inicio
 document.getElementById("loginForm").addEventListener("submit", function (event) {
-    event.preventDefault();
-    alert("Login submitted!");
+    event.preventDefault(); // Evita que el formulario se envíe de manera predeterminada.
+    alert("Login submitted!"); // Muestra un mensaje de confirmación.
+    
+    // Redirige al usuario al home.
+    window.location.href = "indexhome.html";
 });
