@@ -305,11 +305,11 @@ header {
 
 #green {
     width: 100%;
-    padding-top: 4em;
+    padding-top: 14em;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 #green h1 {
@@ -766,6 +766,11 @@ footer a, footer h2 {
         height: 100%;
     }
 
+    #green {
+        padding-top: 4em !important;
+    }
+
+
     #img_m {
         display: flex;
         flex-direction: column;
@@ -875,7 +880,7 @@ footer a, footer h2 {
         width: 130px;
     }
 
-        #img_m1 {
+    #img_m1 {
         padding: 0 2em !important;
     }
 
