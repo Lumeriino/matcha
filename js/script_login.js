@@ -22,5 +22,5 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
     alert("Login submitted!");
 
     // Redirige al usuario al home.
-    window.location.href = "indexhome.html";
+    window.location.href = "index.html";
 });
